@@ -203,7 +203,10 @@ img { max-width: 100%; display: block; }
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .about-media { position: relative; }
-.about-media img { border-radius: var(--radius); box-shadow: var(--shadow-md); }
+.about-media img {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius); box-shadow: var(--shadow-md);
+}
 .about-badge {
   position: absolute; right: -14px; bottom: -18px;
   background: var(--red); color: #fff; border-radius: var(--radius-sm);
